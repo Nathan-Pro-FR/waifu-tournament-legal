@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité — Waifu Tournament</title>
+    <style>
+        :root {
+            --bg: #0f111a;
+            --card: #1a1d2d;
+            --border: #2e334d;
+            --accent: #ff477e;
+            --text: #f0f2f8;
+            --muted: #9aa1c2;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.65;
+            padding: 32px 16px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 71, 126, 0.15);
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 { font-size: 1.9rem; margin-bottom: 8px; }
+        .date { color: var(--muted); font-size: 0.9rem; font-style: italic; }
+        h2 {
+            color: var(--accent);
+            font-size: 1.25rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--accent);
+            padding-left: 12px;
+        }
+        p { margin-bottom: 12px; color: #dce0ef; }
+        ul { margin: 12px 0 16px 24px; color: #dce0ef; }
+        li { margin-bottom: 8px; }
+        strong { color: #ffffff; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        th { background: rgba(255, 71, 126, 0.12); color: var(--accent); }
+        .note-box {
+            background: rgba(46, 204, 113, 0.1);
+            border-left: 4px solid #2ecc71;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 16px 0;
+            color: #e4f7ec;
+        }
+        code {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+        a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="badge">Privacy Policy</div>
+        <h1>Politique de Confidentialité (Privacy Policy) — Bot Discord « Waifu Tournament »</h1>
+        <p class="date">Dernière mise à jour : 19 novembre 2026</p>
+    </header>
+
+    <h2>1. Responsable du traitement et cadre privé</h2>
+    <p>Le présent document décrit la manière dont les données sont collectées et traitées dans le cadre de l'utilisation du bot Discord privé <strong>« Waifu Tournament »</strong>, exclusivement déployé sur le serveur Discord personnel de son administrateur.</p>
+    <p>Le service étant strictement réservé aux personnes âgées de <strong>18 ans ou plus</strong>, aucune donnée concernant des mineurs n'est collectée sciemment.</p>
+    <p>Le responsable du traitement des données est l'administrateur du bot, joignable uniquement sur la plateforme Discord via l'identifiant : <strong>@nathanfurry_lax</strong>.</p>
+
+    <h2>2. Données collectées et finalités</h2>
+    <p>Conformément au principe de minimisation des données énoncé par le Règlement Général sur la Protection des Données (RGPD), seules les informations strictement nécessaires au bon fonctionnement technique et organisationnel du bot sont enregistrées.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Catégorie de données</th>
+                <th>Données collectées</th>
+                <th>Finalité du traitement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Identifiants Discord</strong></td>
+                <td>Identifiant numérique unique (<em>User ID</em>)</td>
+                <td>
+                    • Garantir l'unicité du vote par duel<br>
+                    • Attribuer la paternité des propositions (champ <code>proposed_by</code>)<br>
+                    • Prévenir les tentatives de fraude
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Données de proposition</strong></td>
+                <td>Nom du personnage, œuvre d'origine, URL de l'image</td>
+                <td>
+                    • Permettre l'organisation des duels<br>
+                    • L'affichage du classement public<br>
+                    • La génération de l'arbre de tournoi sur l'interface web dédiée
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Contenus médias</strong></td>
+                <td>Lien CDN Discord de l'image téléversée via <code>/waifu-proposer</code></td>
+                <td>
+                    • Affichage des visuels associés aux fiches de personnages dans les salons Discord et sur la page web du tournoi
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note-box">
+        <strong>Note de sécurité et de confidentialité :</strong> Aucune donnée sensible, adresse e-mail personnelle, mot de passe ou contenu de message privé n'est collecté, lu ou stocké par le bot.
+    </div>
+
+    <h2>3. Hébergement et sous-traitants</h2>
+    <p>Les données collectées sont hébergées et traitées à travers les infrastructures techniques suivantes :</p>
+    <ul>
+        <li><strong>Base de données :</strong> Base de données relationnelle PostgreSQL hébergée sur la plateforme <strong>Supabase</strong>.</li>
+        <li><strong>Exécution du bot et interface web :</strong> Serveur cloud dédié hébergé auprès de <strong>KarmaCloud</strong>.</li>
+        <li><strong>Hébergement des images :</strong> Les visuels transmis transitent directement par les serveurs de Discord via son <strong>CDN officiel</strong>.</li>
+    </ul>
+    <p><strong>Aucune donnée n'est vendue, louée, échangée ou cédée à des tiers à des fins commerciales, marketing ou publicitaires.</strong></p>
+
+    <h2>4. Durée de conservation des données</h2>
+    <p>Les durées de conservation sont définies selon la nature des informations enregistrées :</p>
+    <ul>
+        <li><strong>Personnages proposés (participantes) :</strong> Les fiches des personnages enregistrés (nom, œuvre, lien de l'image, identifiant Discord du proposant et nombre de victoires) sont conservées de manière permanente (indéfiniment) afin de pouvoir être réutilisées lors de tournois ultérieurs, jusqu'à ce qu'un membre de l'équipe de modération ou l'administrateur procède à leur suppression manuelle.</li>
+        <li><strong>Duels et votes :</strong> Lors de l'initialisation et de la génération d'un nouvel arbre de tournoi via la commande <code>/tournoi-generer</code>, l'historique complet des votes et des duels de la session précédente est automatiquement et définitivement effacé de la base de données.</li>
+    </ul>
+
+    <h2>5. Droits des utilisateurs (RGPD)</h2>
+    <p>Conformément à la réglementation européenne sur la protection des données (RGPD), tout utilisateur dispose d'un droit d'accès, de rectification et d'effacement (« droit à l'oubli ») sur l'ensemble des données associées à son identifiant Discord (par exemple, la suppression d'un personnage proposé ou le retrait de ses enregistrements de vote).</p>
+    <p>Pour exercer l'un de ces droits, il suffit d'adresser une demande à un membre de la modération du serveur ou d'envoyer un message direct à l'administrateur du bot sur Discord : <strong>@nathanfurry_lax</strong>.</p>
+
+    <h2>6. Mises à jour de la politique</h2>
+    <p>La présente Politique de Confidentialité est susceptible d'être modifiée ou ajustée à tout moment afin de refléter l'évolution des fonctionnalités du bot ou du cadre réglementaire. La date de dernière mise à jour figurant en tête du document fait foi pour l'application des conditions de traitement.</p>
+
+    <footer>
+        <a href="index.html">← Accueil</a>
+        <a href="tos.html">Consulter les Conditions d'Utilisation (ToS) →</a>
+    </footer>
+</div>
+</body>
+</html>
