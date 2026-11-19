@@ -1,0 +1,1 @@
+# waifu-tournament-legal
